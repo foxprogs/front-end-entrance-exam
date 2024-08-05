@@ -1,13 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My CV</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <button id="downloadResume">Скачать PDF</button>
+  <main>
+    <div class="avatar"><img src="/profile.png" alt="Graham Hunt" /></div>
+    <div class="intro">
+      <h1>Hello 👋🏻 I’m</h1>
+      <div class="info">
+        <h2 contenteditable="true">Graham Hunt</h2>
+        <p contenteditable="true">Brand/Logo Designer</p>
+      </div>
+    </div>
+    <div class="languages">
+      <h4>Languages</h4>
+      <div class="language-grid">
+        <div class="language" contenteditable="true">English</div>
+        <div class="bar">
+          <div class="fill" style="width: 100%"></div>
+        </div>
+        <div class="language" contenteditable="true">Spanish</div>
+        <div class="bar">
+          <div class="fill" style="width: 70%"></div>
+        </div>
+        <div class="language" contenteditable="true">French</div>
+        <div class="bar">
+          <div class="fill" style="width: 60%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="education">
+      <h4>Education</h4>
+      <div class="expertise-grid">
+        <div class="expertise">
+          <div class="years" contenteditable="true">2024</div>
+          <div class="position" contenteditable="true">UX/UI</div>
+          <div class="tags" contenteditable="true">
+            <span>#ux</span>
+            <span>#ui</span>
+            <span>#research</span>
+            <span>#designSystem</span>
+            <span>#Agile</span>
+            <span>#wireframing</span>
+            <span>#figma</span>
+          </div>
+          <div class="institute" contenteditable="true">Neoland</div>
+        </div>
+        <div class="expertise">
+          <div class="years" contenteditable="true">2022</div>
+          <div class="position" contenteditable="true">Product designer</div>
+          <div class="tags" contenteditable="true">
+            <span>#analytics</span>
+            <span>#research</span>
+            <span>#prototype</span>
+            <span>#wireframes</span>
+          </div>
+          <div class="institute" contenteditable="true">Coursera</div>
+        </div>
+        <div class="expertise">
+          <div class="years" contenteditable="true">2017-2021</div>
+          <div class="position" contenteditable="true">Graphic design</div>
+          <div class="tags" contenteditable="true">
+            <span>#branding</span>
+            <span>#illustration</span>
+            <span>#web</span>
+            <span>#adobe</span>
+          </div>
+          <div class="institute" contenteditable="true">
+            Cali Institute of the Arts
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="interests">
+      <h4>Interests</h4>
+      <ul class="tags" contenteditable="true">
+        <li>branding</li>
+        <li>brend identity</li>
+        <li>logo</li>
+        <li>typography</li>
+        <li>photography</li>
+        <li>designing</li>
+        <li>poster design</li>
+        <li>research</li>
+        <li>social networks</li>
+        <li>illustration</li>
+      </ul>
+    </div>
+    <div class="contacts">
+      <h4>Let´s chat! I´m ready to work on excinting projects</h4>
+      <p contenteditable="true">
+        ivann19bj@gmail.com
+        <span class="separator">|</span> +34&nbsp;666&nbsp;666&nbsp;666
+      </p>
+    </div>
+    <div class="tools">
+      <h3>Tools</h3>
+      <div class="tools-block" data-title="design">
+        <img src="/figma.svg" alt="figma" />
+        <img src="/creativecloud.svg" alt="creativecloud" />
+        <img src="/miro.svg" alt="miro" />
+        <img src="/notion.svg" alt="notion" />
+        <img src="/meet.svg" alt="meet" />
+        <img src="/analytics.svg" alt="analytics" />
+      </div>
+      <div class="tools-block" data-title="no-code">
+        <img src="/zapier.svg" alt="zapier" />
+        <img src="/webflow.svg" alt="webflow" />
+        <img src="/framer.svg" alt="framer" />
+        <img src="/wordpress.svg" alt="wordpress" />
+      </div>
+      <div class="tools-block" data-title="artificial intelligence">
+        <img src="/chatgpt.svg" alt="chatgpt" />
+        <img src="/copilot.svg" alt="copilot" />
+        <img src="/midjourney.svg" alt="midjourney" />
+      </div>
+    </div>
+    <div class="experience">
+      <h3>Experience</h3>
+      <div class="experience-grid">
+        <div class="job">
+          <div class="date" contenteditable="true">Jul. 2023 - Aug. 2023</div>
+          <div class="content">
+            <div>
+              <h4 contenteditable="true">Senior Graphic Designer</h4>
+              <p contenteditable="true">
+                Pinnacle <span class="separator">|</span> Full-time
+              </p>
+            </div>
+            <ul>
+              <li contenteditable="true">
+                Research and brainstorm various design ideas for content and
+                marketing.
+              </li>
+              <li contenteditable="true">
+                Review the work submitted by Junior Designers and sharing
+                feedback.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="date" contenteditable="true">Jan. 2023 - Jul. 2023</div>
+          <div class="content">
+            <div>
+              <h4 contenteditable="true">Graphic / Web designer</h4>
+              <p contenteditable="true">
+                Double Square <span class="separator">|</span> Full-time
+              </p>
+            </div>
+            <ul>
+              <li contenteditable="true">
+                Development of internal projects from scratch, product design
+                of brands.
+              </li>
+              <li contenteditable="true">
+                Landing page, webapps and hybrid apps
+              </li>
+              <li contenteditable="true">
+                Taking decisions with stakeholders for the future of products
+                such as Beagle labs, Pinnacle, etc.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="date" contenteditable="true">Feb. 2021 - Jan. 2023</div>
+          <div class="content">
+            <div>
+              <h4 contenteditable="true">Graphic Designer</h4>
+              <p contenteditable="true">Freelance</p>
+            </div>
+            <ul>
+              <li contenteditable="true">
+                Visual design for Events, Brands and Products.
+              </li>
+              <li contenteditable="true">Product design, Packaging Design</li>
+              <li contenteditable="true">Logo Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="app"></div> -->
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>

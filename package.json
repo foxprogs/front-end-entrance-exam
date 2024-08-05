@@ -1,5 +1,5 @@
 {
-  "name": "front-end-entrance-exam",
+  "name": "hw-front",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^5.2.0"
+  "devDependencies": {},
+  "dependencies": {
+    "vite": "^5.3.5"
   }
 }
