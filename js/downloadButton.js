@@ -1,15 +1,19 @@
 export function downloadPDF() {
-  // Настроить элементы для преобразования
-  const element = document.querySelector("main");
+  const element = document.querySelector("#resume");
 
   const options = {
-    margin: 0,
+    margin: 2,
     filename: "resume.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 1 },
-    jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+    image: { type: "jpeg", quality: 0.95 },
+    html2canvas: {
+      scale: 2,
+      onclone: function (element) {
+        element.documentElement.style.fontSize = "13px";
+        return element;
+      },
+    },
+    jsPDF: { unit: "pt", orientation: "p", format: "a4" },
   };
 
-  // Преобразование элемента в PDF и начало загрузки
   html2pdf().from(element).set(options).save();
 }
